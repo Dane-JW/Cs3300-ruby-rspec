@@ -1,4 +1,3 @@
-test
 # **Overview**
 
 This guided exploration gives some basic practice in Ruby as well as getting you accustomed to making testing a regular part of your workflow. Review lectures associated with chapter 2 and chapter 8.1-8.2.
