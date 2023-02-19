@@ -3,18 +3,32 @@
 require_relative '../lib/ruby_intro'
 
 describe 'Ruby intro part 1' do
+
+  #Groups tests that describe behavior of sum method
   describe '#sum' do
 
     it 'returns correct sum [1 point]', points: 1 do
+
+      #Verifies sum method returns an integer
       expect(sum([1, 2, 3, 4, 5])).to be_a_kind_of Integer
+
+      #Verifies sum method calculates correctly
       expect(sum([1, 2, 3, 4, 5])).to eq(15)
+
+      #Verifies sum method calculates correctly with negatives
       expect(sum([1, 2, 3, 4, -5])).to eq(5)
       expect(sum([1, 2, 3, 4, -5, 5, -100])).to eq(-90)
+
     end
 
     it 'works on the empty array [2 points]', points: 2 do
+
+      #Verifies sum method doesn't raise an error when the array is empty
       expect { sum([]) }.not_to raise_error
+
+      #Verifies sum method returns 0 when the array is empty
       expect(sum([])).to be_zero
+      
     end
   end
 
